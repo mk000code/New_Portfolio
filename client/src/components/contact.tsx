@@ -68,11 +68,11 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 doom-contact-bg">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-primary mb-4">Get In Touch</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Ready to work together? I'd love to hear about your project and discuss how we can bring your ideas to life.
           </p>
         </div>
@@ -87,7 +87,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-medium text-primary">Email</p>
-                  <p className="text-gray-600">mdkaif4530@gmail.com</p>
+                  <p className="text-muted-foreground">mdkaif4530@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
@@ -96,7 +96,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-medium text-primary">Phone</p>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
@@ -105,7 +105,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-medium text-primary">Location</p>
-                  <p className="text-gray-600">Ghaziabad - Delhi-NCR</p>
+                  <p className="text-muted-foreground">Ghaziabad - Delhi-NCR</p>
                 </div>
               </div>
             </div>
@@ -115,25 +115,25 @@ export default function Contact() {
               <div className="flex space-x-4">
                 <a
                   href="#"
-                  className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-colors"
+                  className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center hover:bg-accent hover:text-background transition-colors"
                 >
                   <Linkedin size={20} />
                 </a>
                 <a
                   href="#"
-                  className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-colors"
+                  className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center hover:bg-accent hover:text-background transition-colors"
                 >
                   <Github size={20} />
                 </a>
                 <a
                   href="#"
-                  className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-colors"
+                  className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center hover:bg-accent hover:text-background transition-colors"
                 >
                   <Twitter size={20} />
                 </a>
                 <a
                   href="#"
-                  className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-accent hover:text-white transition-colors"
+                  className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center hover:bg-accent hover:text-background transition-colors"
                 >
                   <Instagram size={20} />
                 </a>
@@ -142,7 +142,7 @@ export default function Contact() {
           </div>
           
           <div>
-            <Card>
+            <Card className="doom-card">
               <CardContent className="p-6">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
@@ -217,7 +217,7 @@ export default function Contact() {
                   <Button
                     type="submit"
                     disabled={contactMutation.isPending}
-                    className="w-full px-8 py-4 bg-accent text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                    className="doom-button w-full px-8 py-4 rounded-lg font-medium"
                   >
                     {contactMutation.isPending ? "Sending..." : "Send Message"}
                     <Send className="ml-2 h-4 w-4" />

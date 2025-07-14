@@ -10,34 +10,34 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="pt-20 pb-16 bg-gradient-to-br from-secondary to-white">
+    <section id="home" className="pt-20 pb-16 doom-hero-bg">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="lg:w-1/2 mb-12 lg:mb-0">
             <h1 className="text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
-              Hi, I'm <span className="text-accent">Mohammad Kaif</span>
+              Hi, I'm <span className="text-accent doom-text-glow">Mohammad Kaif</span>
             </h1>
-            <div className="text-xl lg:text-2xl text-gray-600 mb-8 overflow-hidden whitespace-nowrap">
+            <div className="text-xl lg:text-2xl text-muted-foreground mb-8 overflow-hidden whitespace-nowrap">
               <span className="typing-animation">Full Stack Developer & Designer</span>
             </div>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              I create beautiful, functional digital experiences that solve real problems. 
-              Specializing in modern web technologies and user-centered design.
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              I create powerful, efficient digital solutions that dominate the digital realm. 
+              Specializing in modern web technologies and algorithmic mastery.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 onClick={() => scrollToSection("projects")}
-                className="inline-flex items-center px-8 py-3 bg-accent text-white rounded-lg hover:bg-blue-700 transition-colors"
+                className="doom-button inline-flex items-center px-8 py-3 rounded-lg transition-all"
               >
-                <span>View My Work</span>
+                <span>View My Arsenal</span>
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button
                 onClick={() => scrollToSection("contact")}
                 variant="outline"
-                className="inline-flex items-center px-8 py-3 border-2 border-accent text-accent rounded-lg hover:bg-accent hover:text-white transition-colors"
+                className="inline-flex items-center px-8 py-3 border-2 border-accent text-accent rounded-lg hover:bg-accent hover:text-background transition-colors"
               >
-                <span>Get In Touch</span>
+                <span>Contact</span>
               </Button>
             </div>
           </div>
@@ -48,8 +48,8 @@ export default function Hero() {
                 alt="Mohammad Kaif - Professional headshot"
                 className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-accent rounded-full flex items-center justify-center shadow-lg">
-                <Code className="text-white text-2xl" size={32} />
+              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-accent rounded-full flex items-center justify-center shadow-lg border-2 border-accent">
+                <Code className="text-background text-2xl" size={32} />
               </div>
             </div>
           </div>

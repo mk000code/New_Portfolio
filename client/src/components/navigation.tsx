@@ -24,9 +24,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? "bg-white/90 backdrop-blur-md border-b border-gray-200" : "bg-white/90 backdrop-blur-md"
-    }`}>
+    <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 doom-nav">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-primary">MK</div>
@@ -35,25 +33,25 @@ export default function Navigation() {
           <div className="hidden md:flex space-x-8">
             <button
               onClick={() => scrollToSection("home")}
-              className="text-gray-600 hover:text-accent transition-colors"
+              className="text-muted-foreground hover:text-accent transition-colors"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className="text-gray-600 hover:text-accent transition-colors"
+              className="text-muted-foreground hover:text-accent transition-colors"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection("projects")}
-              className="text-gray-600 hover:text-accent transition-colors"
+              className="text-muted-foreground hover:text-accent transition-colors"
             >
-              Projects
+              Arsenal
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-gray-600 hover:text-accent transition-colors"
+              className="text-muted-foreground hover:text-accent transition-colors"
             >
               Contact
             </button>
@@ -72,29 +70,29 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-gray-200">
+          <div className="md:hidden mt-4 pb-4 border-t border-border">
             <div className="flex flex-col space-y-4 pt-4">
               <button
                 onClick={() => scrollToSection("home")}
-                className="text-gray-600 hover:text-accent transition-colors text-left"
+                className="text-muted-foreground hover:text-accent transition-colors text-left"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-gray-600 hover:text-accent transition-colors text-left"
+                className="text-muted-foreground hover:text-accent transition-colors text-left"
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection("projects")}
-                className="text-gray-600 hover:text-accent transition-colors text-left"
+                className="text-muted-foreground hover:text-accent transition-colors text-left"
               >
-                Projects
+                Arsenal
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-gray-600 hover:text-accent transition-colors text-left"
+                className="text-muted-foreground hover:text-accent transition-colors text-left"
               >
                 Contact
               </button>
