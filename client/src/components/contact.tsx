@@ -68,11 +68,11 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 doom-contact-bg">
+    <section id="contact" className="py-20 doom-contact-bg doom-3d-container">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-primary mb-4">Get In Touch</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-primary mb-4 doom-text-3d doom-energy-pulse">Get In Touch</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto doom-hologram rounded-lg p-4">
             Ready to work together? I'd love to hear about your project and discuss how we can bring your ideas to life.
           </p>
         </div>
@@ -81,8 +81,8 @@ export default function Contact() {
           <div>
             <h3 className="text-2xl font-semibold text-primary mb-6">Let's Connect</h3>
             <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+              <div className="flex items-center space-x-4 doom-3d-card doom-parallax">
+                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center doom-intense-glow doom-energy-pulse">
                   <Mail className="text-white" size={20} />
                 </div>
                 <div>
@@ -91,8 +91,8 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+              <div className="flex items-center space-x-4 doom-3d-card doom-parallax">
+                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center doom-intense-glow doom-energy-pulse">
                   <MapPin className="text-white" size={20} />
                 </div>
                 <div>
@@ -136,7 +136,7 @@ export default function Contact() {
           </div>
           
           <div>
-            <Card className="doom-card">
+            <Card className="doom-card doom-3d-card doom-metallic doom-intense-glow">
               <CardContent className="p-6">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">

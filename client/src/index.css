@@ -66,6 +66,11 @@
 
   html {
     scroll-behavior: smooth;
+    perspective: 1000px;
+  }
+  
+  body {
+    transform-style: preserve-3d;
   }
 }
 
@@ -170,6 +175,136 @@
   .doom-card:hover {
     border-color: var(--doom-green);
     box-shadow: 0 10px 15px -3px rgba(0, 255, 102, 0.2), 0 4px 6px -2px rgba(0, 255, 102, 0.1);
+  }
+
+  /* 3D Dr. Doom Intense Styling */
+  .doom-3d-container {
+    perspective: 1200px;
+    transform-style: preserve-3d;
+  }
+  
+  .doom-3d-card {
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    backface-visibility: hidden;
+  }
+  
+  .doom-3d-card:hover {
+    transform: rotateY(10deg) rotateX(5deg) translateZ(50px);
+  }
+  
+  .doom-intense-glow {
+    box-shadow: 
+      0 0 20px rgba(0, 255, 102, 0.5),
+      0 0 40px rgba(0, 255, 102, 0.3),
+      0 0 60px rgba(0, 255, 102, 0.2),
+      inset 0 0 20px rgba(0, 255, 102, 0.1);
+  }
+  
+  .doom-floating {
+    animation: doom-float 6s ease-in-out infinite;
+  }
+  
+  @keyframes doom-float {
+    0%, 100% { transform: translateY(0px) rotateZ(0deg); }
+    50% { transform: translateY(-20px) rotateZ(1deg); }
+  }
+  
+  .doom-depth-shadow {
+    box-shadow: 
+      0 10px 30px rgba(0, 0, 0, 0.8),
+      0 20px 60px rgba(0, 255, 102, 0.3),
+      0 30px 80px rgba(0, 255, 102, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  
+  .doom-metallic {
+    background: linear-gradient(135deg, 
+      #1a1a1a 0%, 
+      #2d2d2d 25%, 
+      #404040 50%, 
+      #2d2d2d 75%, 
+      #1a1a1a 100%);
+    border: 2px solid #00ff66;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .doom-metallic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+      transparent, 
+      rgba(255, 255, 255, 0.2), 
+      transparent);
+    transition: left 0.6s;
+  }
+  
+  .doom-metallic:hover::before {
+    left: 100%;
+  }
+  
+  .doom-text-3d {
+    text-shadow: 
+      0 1px 0 #ccc,
+      0 2px 0 #c9c9c9,
+      0 3px 0 #bbb,
+      0 4px 0 #b9b9b9,
+      0 5px 0 #aaa,
+      0 6px 1px rgba(0,0,0,.1),
+      0 0 5px rgba(0,0,0,.1),
+      0 1px 3px rgba(0,0,0,.3),
+      0 3px 5px rgba(0,0,0,.2),
+      0 5px 10px rgba(0,0,0,.25),
+      0 10px 10px rgba(0,0,0,.2),
+      0 20px 20px rgba(0,0,0,.15);
+  }
+  
+  .doom-hologram {
+    position: relative;
+    background: linear-gradient(45deg, 
+      rgba(0, 255, 102, 0.1) 0%, 
+      rgba(0, 255, 102, 0.3) 50%, 
+      rgba(0, 255, 102, 0.1) 100%);
+    border: 1px solid rgba(0, 255, 102, 0.8);
+    animation: hologram-flicker 2s infinite;
+  }
+  
+  @keyframes hologram-flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+  
+  .doom-energy-pulse {
+    animation: energy-pulse 3s ease-in-out infinite;
+  }
+  
+  @keyframes energy-pulse {
+    0% { 
+      box-shadow: 0 0 0 0 rgba(0, 255, 102, 0.7);
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 0 20px rgba(0, 255, 102, 0);
+      transform: scale(1.05);
+    }
+    100% { 
+      box-shadow: 0 0 0 0 rgba(0, 255, 102, 0);
+      transform: scale(1);
+    }
+  }
+  
+  .doom-parallax {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .doom-parallax:hover {
+    transform: translateZ(30px) scale(1.02);
   }
 
   .doom-button {

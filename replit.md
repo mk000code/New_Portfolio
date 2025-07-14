@@ -26,6 +26,12 @@ This is a personal portfolio website for Mohammad Kaif built as a full-stack app
   - 12th Grade: 90% with Medal icon and blue theme
   - College 1st Year: 8.4 CGPA with GraduationCap icon and green theme
 - Implemented Dr. Doom styling with hover effects, scale animations, and sticker elements
+- Enhanced portfolio with intense 3D visual effects:
+  - Added 3D transforms, depth shadows, and perspective views
+  - Implemented metallic textures with shine effects
+  - Added floating animations and energy pulse effects
+  - Enhanced hologram-style elements with flickering animations
+  - Applied parallax effects and 3D card rotations throughout all sections
 
 ## User Preferences
 

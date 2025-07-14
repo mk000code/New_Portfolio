@@ -73,11 +73,11 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-20 doom-about-bg">
+    <section id="about" className="py-20 doom-about-bg doom-3d-container">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 relative z-10">
-          <h2 className="text-4xl font-bold text-primary mb-4">About Me</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Solving problems, one algorithm at a time | DSA | Tech Explorer | Code &gt; Talk</p>
+          <h2 className="text-4xl font-bold text-primary mb-4 doom-text-3d doom-energy-pulse">About Me</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto doom-hologram rounded-lg p-4">Solving problems, one algorithm at a time | DSA | Tech Explorer | Code &gt; Talk</p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
@@ -121,13 +121,13 @@ export default function About() {
           
           <div>
             <h3 className="text-2xl font-semibold text-primary mb-6">Skills & Expertise</h3>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 doom-3d-container">
               {skills.map((skill, index) => (
                 <div
                   key={index}
-                  className="skill-item p-4 bg-gray-50 rounded-lg text-center cursor-pointer"
+                  className="skill-item doom-3d-card doom-metallic doom-intense-glow p-4 rounded-lg text-center cursor-pointer"
                 >
-                  <skill.icon className={`text-3xl ${skill.color} mb-2 mx-auto`} />
+                  <skill.icon className={`text-3xl ${skill.color} mb-2 mx-auto doom-floating`} />
                   <p className="font-medium">{skill.name}</p>
                 </div>
               ))}
@@ -217,19 +217,20 @@ export default function About() {
         {/* Educational Background Section */}
         <div className="mt-20">
           <div className="text-center mb-16 relative z-10">
-            <h3 className="text-3xl font-bold text-primary mb-4">Educational Background</h3>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <h3 className="text-3xl font-bold text-primary mb-4 doom-text-3d doom-energy-pulse">Educational Background</h3>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto doom-hologram rounded-lg p-4">
               Academic excellence through consistent performance and dedication
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 relative z-10">
+          <div className="grid md:grid-cols-3 gap-8 relative z-10 doom-3d-container">
             {educationalData.map((edu, index) => (
               <div 
                 key={index} 
                 className={`relative overflow-hidden rounded-xl ${edu.bgColor} ${edu.borderColor} border-2 p-6 
-                           hover:scale-105 transition-all duration-300 cursor-pointer group 
-                           ${edu.glowColor} hover:shadow-2xl`}
+                           doom-3d-card doom-metallic doom-intense-glow transition-all duration-300 cursor-pointer group 
+                           ${edu.glowColor} hover:shadow-2xl doom-floating`}
+                style={{animationDelay: `${index * 0.5}s`}}
               >
                 {/* Doom-style sticker effect */}
                 <div className="absolute top-2 right-2 w-6 h-6 bg-accent rounded-full opacity-20 group-hover:opacity-40 transition-opacity"></div>
