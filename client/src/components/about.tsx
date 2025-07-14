@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Download, Linkedin, Github, Twitter, Code2, Trophy, Target, Award } from "lucide-react";
+import { Download, Linkedin, Github, Twitter, Code2, Trophy, Target, Award, GraduationCap, Star, Medal } from "lucide-react";
 import { 
   SiJavascript, 
   SiReact, 
@@ -40,6 +40,36 @@ export default function About() {
     { label: 'Total Questions', value: '205+', icon: Trophy, color: 'text-yellow-500' },
     { label: 'LeetCode Solved', value: '100', icon: Target, color: 'text-orange-500' },
     { label: 'Success Rate', value: '85%', icon: Award, color: 'text-green-500' },
+  ];
+
+  const educationalData = [
+    { 
+      level: '10th Grade', 
+      result: '93%', 
+      icon: Star, 
+      color: 'text-yellow-500',
+      bgColor: 'bg-yellow-500/20',
+      borderColor: 'border-yellow-500/50',
+      glowColor: 'hover:shadow-yellow-500/50'
+    },
+    { 
+      level: '12th Grade', 
+      result: '90%', 
+      icon: Medal, 
+      color: 'text-blue-500',
+      bgColor: 'bg-blue-500/20',
+      borderColor: 'border-blue-500/50',
+      glowColor: 'hover:shadow-blue-500/50'
+    },
+    { 
+      level: 'College 1st Year', 
+      result: '8.4 CGPA', 
+      icon: GraduationCap, 
+      color: 'text-green-500',
+      bgColor: 'bg-green-500/20',
+      borderColor: 'border-green-500/50',
+      glowColor: 'hover:shadow-green-500/50'
+    },
   ];
 
   return (
@@ -181,6 +211,55 @@ export default function About() {
                 </BarChart>
               </ResponsiveContainer>
             </div>
+          </div>
+        </div>
+
+        {/* Educational Background Section */}
+        <div className="mt-20">
+          <div className="text-center mb-16 relative z-10">
+            <h3 className="text-3xl font-bold text-primary mb-4">Educational Background</h3>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Academic excellence through consistent performance and dedication
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 relative z-10">
+            {educationalData.map((edu, index) => (
+              <div 
+                key={index} 
+                className={`relative overflow-hidden rounded-xl ${edu.bgColor} ${edu.borderColor} border-2 p-6 
+                           hover:scale-105 transition-all duration-300 cursor-pointer group 
+                           ${edu.glowColor} hover:shadow-2xl`}
+              >
+                {/* Doom-style sticker effect */}
+                <div className="absolute top-2 right-2 w-6 h-6 bg-accent rounded-full opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                <div className="absolute bottom-2 left-2 w-4 h-4 bg-accent rounded-full opacity-15 group-hover:opacity-30 transition-opacity"></div>
+                
+                {/* Icon with glow effect */}
+                <div className={`inline-flex items-center justify-center w-20 h-20 ${edu.color} ${edu.bgColor} 
+                                rounded-full shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300
+                                group-hover:shadow-2xl`}>
+                  <edu.icon size={40} className="group-hover:animate-pulse" />
+                </div>
+                
+                {/* Content */}
+                <div className="text-center">
+                  <h4 className="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">
+                    {edu.level}
+                  </h4>
+                  <div className={`text-3xl font-bold ${edu.color} mb-2 group-hover:scale-110 transition-transform duration-300`}>
+                    {edu.result}
+                  </div>
+                  <div className="text-muted-foreground text-sm group-hover:text-primary transition-colors">
+                    Academic Achievement
+                  </div>
+                </div>
+
+                {/* Animated border glow */}
+                <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 
+                               bg-gradient-to-r from-transparent via-accent/20 to-transparent animate-pulse"></div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

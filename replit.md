@@ -21,6 +21,11 @@ This is a personal portfolio website for Mohammad Kaif built as a full-stack app
 - Fixed navigation scroll issue with proper offset calculation and smooth scrolling
 - Added LinkedIn profile link: https://www.linkedin.com/in/mohammad-kaif-66950427a/
 - Removed phone contact option from contact section
+- Added Educational Background section with academic achievements:
+  - 10th Grade: 93% with Star icon and yellow theme
+  - 12th Grade: 90% with Medal icon and blue theme
+  - College 1st Year: 8.4 CGPA with GraduationCap icon and green theme
+- Implemented Dr. Doom styling with hover effects, scale animations, and sticker elements
 
 ## User Preferences
 

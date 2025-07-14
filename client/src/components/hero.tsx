@@ -25,11 +25,10 @@ export default function Hero() {
               Hi, I'm <span className="text-accent doom-text-glow">Mohammad Kaif</span>
             </h1>
             <div className="text-xl lg:text-2xl text-muted-foreground mb-8 overflow-hidden whitespace-nowrap">
-              <span className="typing-animation">Full Stack Developer & Designer</span>
+              <span className="typing-animation"> DSA | Tech Explorer </span>
             </div>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              I create powerful, efficient digital solutions that dominate the digital realm. 
-              Specializing in modern web technologies and algorithmic mastery.
+              Hi I am a second-year engineering student passionate about technology, problem-solving
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
