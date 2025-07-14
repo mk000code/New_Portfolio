@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
-import { Mail, Phone, MapPin, Send, Linkedin, Github, Twitter, Instagram } from "lucide-react";
+import { Mail, MapPin, Send, Linkedin, Github, Twitter, Instagram } from "lucide-react";
 
 interface ContactFormData {
   firstName: string;
@@ -90,15 +90,7 @@ export default function Contact() {
                   <p className="text-muted-foreground">mdkaif4530@gmail.com</p>
                 </div>
               </div>
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
-                  <Phone className="text-white" size={20} />
-                </div>
-                <div>
-                  <p className="font-medium text-primary">Phone</p>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                </div>
-              </div>
+
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
                   <MapPin className="text-white" size={20} />
@@ -114,7 +106,9 @@ export default function Contact() {
               <h4 className="text-lg font-semibold text-primary mb-4">Follow Me</h4>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/mohammad-kaif-66950427a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center hover:bg-accent hover:text-background transition-colors"
                 >
                   <Linkedin size={20} />

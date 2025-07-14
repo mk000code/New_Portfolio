@@ -66,7 +66,9 @@ export default function About() {
               </Button>
               <div className="flex space-x-3">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/mohammad-kaif-66950427a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-accent text-xl transition-colors"
                 >
                   <Linkedin size={24} />

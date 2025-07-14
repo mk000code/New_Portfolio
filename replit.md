@@ -18,6 +18,9 @@ This is a personal portfolio website for Mohammad Kaif built as a full-stack app
 - Added Problem Solving Excellence section with interactive charts showing 250+ DSA problems solved
 - Integrated Recharts for data visualization (pie chart and bar chart)
 - Added achievement stats with 100 LeetCode problems and 85% success rate
+- Fixed navigation scroll issue with proper offset calculation and smooth scrolling
+- Added LinkedIn profile link: https://www.linkedin.com/in/mohammad-kaif-66950427a/
+- Removed phone contact option from contact section
 
 ## User Preferences
 
