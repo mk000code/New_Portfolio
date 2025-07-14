@@ -11,6 +11,13 @@ This is a personal portfolio website for Mohammad Kaif built as a full-stack app
 - Updated navigation logo initials to "MK"
 - Updated hero section with Mohammad Kaif's name and professional headshot
 - Updated contact information and footer branding
+- Updated skills section with Python, C, C++ as primary languages
+- Enhanced Projects section with colorful animated gradients and floating orbs
+- Changed from "Featured Projects" to "Working on Projects" with E-commerce App
+- Updated email to mdkaif4530@gmail.com and location to Ghaziabad - Delhi-NCR
+- Added Problem Solving Excellence section with interactive charts showing 250+ DSA problems solved
+- Integrated Recharts for data visualization (pie chart and bar chart)
+- Added achievement stats with 100 LeetCode problems and 85% success rate
 
 ## User Preferences
 
