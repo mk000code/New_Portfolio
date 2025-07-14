@@ -151,8 +151,17 @@ export default function About() {
                       <Cell key={`cell-${index}`} fill={entry.color} />
                     ))}
                   </Pie>
-                  <Tooltip />
-                  <Legend />
+                  <Tooltip 
+                    contentStyle={{ 
+                      backgroundColor: 'hsl(0, 0%, 8%)', 
+                      border: '1px solid hsl(0, 0%, 25%)',
+                      borderRadius: '8px',
+                      color: 'hsl(0, 0%, 95%)'
+                    }}
+                  />
+                  <Legend 
+                    wrapperStyle={{ color: 'hsl(0, 0%, 95%)' }}
+                  />
                 </PieChart>
               </ResponsiveContainer>
             </div>
@@ -162,10 +171,17 @@ export default function About() {
               <h4 className="text-xl font-semibold text-primary mb-6 text-center">Platform-wise Performance</h4>
               <ResponsiveContainer width="100%" height={300}>
                 <BarChart data={platformData}>
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="platform" />
-                  <YAxis />
-                  <Tooltip />
+                  <CartesianGrid strokeDasharray="3 3" stroke="hsl(0, 0%, 30%)" />
+                  <XAxis dataKey="platform" stroke="hsl(0, 0%, 65%)" />
+                  <YAxis stroke="hsl(0, 0%, 65%)" />
+                  <Tooltip 
+                    contentStyle={{ 
+                      backgroundColor: 'hsl(0, 0%, 8%)', 
+                      border: '1px solid hsl(0, 0%, 25%)',
+                      borderRadius: '8px',
+                      color: 'hsl(0, 0%, 95%)'
+                    }}
+                  />
                   <Bar dataKey="questions" fill="hsl(120, 100%, 40%)" />
                 </BarChart>
               </ResponsiveContainer>
