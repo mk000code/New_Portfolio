@@ -25,21 +25,19 @@ export default function About() {
   // Problem solving data
   const problemSolvingData = [
     { name: 'LeetCode', value: 100, color: '#FF6B35' },
-    { name: 'Other Platforms', value: 150, color: '#4ECDC4' },
+    { name: 'Other Platforms', value: 105, color: '#4ECDC4' },
   ];
 
   const platformData = [
     { platform: 'LeetCode', questions: 100, difficulty: 'Mixed' },
     { platform: 'CodeChef', questions: 60, difficulty: 'Medium' },
     { platform: 'Codeforces', questions: 45, difficulty: 'Hard' },
-    { platform: 'HackerRank', questions: 35, difficulty: 'Easy' },
-    { platform: 'GeeksforGeeks', questions: 10, difficulty: 'Mixed' },
   ];
 
   const COLORS = ['#FF6B35', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7'];
 
   const achievementStats = [
-    { label: 'Total Questions', value: '250+', icon: Trophy, color: 'text-yellow-500' },
+    { label: 'Total Questions', value: '205+', icon: Trophy, color: 'text-yellow-500' },
     { label: 'LeetCode Solved', value: '100', icon: Target, color: 'text-orange-500' },
     { label: 'Success Rate', value: '85%', icon: Award, color: 'text-green-500' },
   ];
@@ -64,7 +62,7 @@ export default function About() {
               building scalable applications.
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              I believe in continuous learning and have solved over 250 DSA problems across 
+              I believe in continuous learning and have solved over 205 DSA problems across 
               various platforms. When I'm not coding, you can find me exploring new technologies, 
               contributing to open source projects, or working on innovative solutions.
             </p>
@@ -117,7 +115,7 @@ export default function About() {
           <div className="text-center mb-16 relative z-10">
             <h3 className="text-3xl font-bold text-primary mb-4">Problem Solving Excellence</h3>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Demonstrating strong algorithmic thinking with 250+ DSA problems solved across multiple platforms
+              Demonstrating strong algorithmic thinking with 205+ DSA problems solved across multiple platforms
             </p>
           </div>
 
