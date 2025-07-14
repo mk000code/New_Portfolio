@@ -53,12 +53,7 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
           <div>
             <h3 className="text-2xl font-semibold text-primary mb-6">My Story</h3>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
-              As a passionate developer from Ghaziabad, Delhi-NCR, I specialize in creating 
-              efficient solutions through strong problem-solving skills and modern web technologies. 
-              My journey in programming has been driven by a love for algorithmic thinking and 
-              building scalable applications.
-            </p>
+            <p className="text-muted-foreground mb-6 leading-relaxed">Hi, I'm KAIF, a second-year engineering student passionate about technology, problem-solving, and building intelligent systems that can make a real difference.  I’m currently pursuing my B.Tech in Computer Science and engineering college at KIET - GHAZIABAD. While my journey hasn’t been perfect, it’s been real — filled with learning, resilience, and a burning drive to grow beyond limitations.  Over the past year, I’ve been diving deep into:  Data Structures & Algorithms (DSA) – solving real-world problems through code.  Web Development – designing interactive and responsive web interfaces.  Artificial Intelligence & Machine Learning – exploring how machines learn, think, and solve human problems.  Despite the challenges, I’m committed to mastering skills that make me relevant, resilient, and remarkable in a future driven by AI and innovation. Currently, I’m working on full-stack AI-integrated projects and preparing myself for high-impact roles in tech.</p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
               I believe in continuous learning and have solved over 205 DSA problems across 
               various platforms. When I'm not coding, you can find me exploring new technologies, 
