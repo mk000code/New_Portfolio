@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <div className="text-2xl font-bold mb-2 text-primary">Mohammad Kaif</div>
-            <p className="text-muted-foreground">Full Stack Developer & Designer</p>
+            <p className="text-muted-foreground">DSA Enthusiast | Problem Solver 🧩💻</p>
           </div>
           <div className="flex space-x-6">
             <button
