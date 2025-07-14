@@ -5,18 +5,25 @@ import { projectsData } from "@/lib/projects-data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 bg-secondary">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="py-20 bg-gradient-to-br from-pink-100 via-purple-100 to-indigo-100 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-r from-yellow-200/20 via-red-200/20 to-blue-200/20"></div>
+      <div className="absolute top-0 left-0 w-full h-full">
+        <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-pink-300 to-purple-300 rounded-full opacity-20 animate-pulse"></div>
+        <div className="absolute top-40 right-32 w-24 h-24 bg-gradient-to-br from-blue-300 to-cyan-300 rounded-full opacity-20 animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-32 left-32 w-40 h-40 bg-gradient-to-br from-yellow-300 to-orange-300 rounded-full opacity-20 animate-pulse" style={{animationDelay: '2s'}}></div>
+        <div className="absolute bottom-20 right-20 w-28 h-28 bg-gradient-to-br from-green-300 to-teal-300 rounded-full opacity-20 animate-pulse" style={{animationDelay: '3s'}}></div>
+      </div>
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-primary mb-4">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">Working on Projects</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            A selection of my recent work across web development and design
+            Currently developing exciting projects across web development and programming
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectsData.map((project) => (
-            <div key={project.id} className="project-card bg-white rounded-xl shadow-lg overflow-hidden">
+            <div key={project.id} className="project-card bg-white/80 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden border border-white/20">
               <img
                 src={project.image}
                 alt={project.title}
@@ -56,13 +63,9 @@ export default function Projects() {
         </div>
         
         <div className="text-center mt-12">
-          <Button
-            variant="outline"
-            className="inline-flex items-center px-8 py-3 border-2 border-accent text-accent rounded-lg hover:bg-accent hover:text-white transition-colors"
-          >
-            <span>View All Projects</span>
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <div className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg shadow-lg">
+            <span>More Projects Coming Soon...</span>
+          </div>
         </div>
       </div>
     </section>

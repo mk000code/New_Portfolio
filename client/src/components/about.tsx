@@ -1,25 +1,23 @@
 import { Button } from "@/components/ui/button";
-import { Download, Linkedin, Github, Twitter } from "lucide-react";
+import { Download, Linkedin, Github, Twitter, Code2 } from "lucide-react";
 import { 
   SiJavascript, 
   SiReact, 
   SiNodedotjs, 
   SiPython, 
   SiMongodb, 
-  SiAmazonwebservices, 
-  SiFigma, 
   SiGit 
 } from "react-icons/si";
 
 export default function About() {
   const skills = [
+    { name: "Python", icon: SiPython, color: "text-blue-600" },
+    { name: "C", icon: Code2, color: "text-blue-700" },
+    { name: "C++", icon: Code2, color: "text-blue-800" },
     { name: "JavaScript", icon: SiJavascript, color: "text-yellow-500" },
     { name: "React", icon: SiReact, color: "text-blue-500" },
     { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
-    { name: "Python", icon: SiPython, color: "text-blue-600" },
     { name: "MongoDB", icon: SiMongodb, color: "text-green-600" },
-    { name: "AWS", icon: SiAmazonwebservices, color: "text-orange-500" },
-    { name: "Figma", icon: SiFigma, color: "text-purple-500" },
     { name: "Git", icon: SiGit, color: "text-red-500" },
   ];
 
