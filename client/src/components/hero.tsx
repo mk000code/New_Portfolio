@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code } from "lucide-react";
 
+import kk from "@assets/kk.jpg";
+
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -44,9 +46,9 @@ export default function Hero() {
           <div className="lg:w-1/2 lg:pl-12">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800"
+                src={kk}
                 alt="Mohammad Kaif - Professional headshot"
-                className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
+                className="rounded-2xl shadow-2xl w-full max-w-md mx-auto mt-[60px] mb-[60px] pt-[-4px] pb-[-4px]"
               />
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-accent rounded-full flex items-center justify-center shadow-lg border-2 border-accent">
                 <Code className="text-background text-2xl" size={32} />
